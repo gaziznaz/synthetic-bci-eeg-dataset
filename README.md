@@ -80,20 +80,3 @@ hardware-dependent and will differ from machine to machine — what should
 reproduce consistently is the *relative* headroom versus the interface's
 3000 ms refresh budget.
 
-## What is intentionally not included
-
-Exploratory analyses that were tried during development but not used in the
-article (e.g. an early 3-class distribution summary, and a first, since
-corrected, version of the calibration script that clipped scores to a
-[0, 100] floor and produced an artificial 0.0 ± 0.0 saturation for one
-profile) are not included here, to avoid presenting anything inconsistent
-with the published results. `baseline_calibration_stats.py` is the corrected
-version that produces the numbers actually reported in the article.
-
-The student/teacher visualization interface is also not included, as it does
-not affect any of the reported quantitative results.
-
-## Citing
-
-If you use this code or dataset, please cite the article (full reference to
-be added upon publication).
